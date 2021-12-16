@@ -65,7 +65,7 @@
           </div>
           <!--Footer-->
           <div class="card-footer mr-auto">
-            {{ $categorias->links() }}
+            {{ $categoria->links() }}
           </div>
           <!--End footer-->
         </div>

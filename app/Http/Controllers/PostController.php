@@ -105,6 +105,6 @@ class PostController extends Controller
 
         $post->delete();
         return back()->with('succes', 'Se elimino correctamente');
-        
+
     }
 }

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\categoria;
+use App\Models\Categoria;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 
@@ -12,7 +12,7 @@ class CategoriaController extends Controller
     {
         abort_if(Gate::denies('categoria_index'), 403);
 
-        $categorias = categoria::paginate(5);
+        $categorias = Categoria::paginate(5);
         return view('categorias.index', compact('categoria'));
     }
 
@@ -26,33 +26,33 @@ class CategoriaController extends Controller
 
     public function store(Request $request)
     {
-        categoria::create($request->all());
+        Categoria::create($request->all());
 
         return redirect()->route('categorias.index');
     }
 
-    public function show(categoria $categoria)
+    public function show(Categoria $categoria)
     {
         abort_if(Gate::denies('categoria_show'), 403);
 
         return view('categorias.show', compact('categoria'));
     }
 
-    public function edit(categoria $categoria)
+    public function edit(Categoria $categoria)
     {
         abort_if(Gate::denies('categoria_edit'), 403);
 
         return view('categorias.edit', compact('categoria'));
     }
 
-    public function update(Request $request, categoria $categoria)
+    public function update(Request $request, Categoria $categoria)
     {
         $categoria->update($request->all());
 
         return redirect()->route('categorias.index');
     }
 
-    public function destroy(categoria $categoria)
+    public function destroy(Categoria $categoria)
     {
         abort_if(Gate::denies('categoria_destroy'), 403);
 
