@@ -8,6 +8,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use Spatie\Permission\Models\Role;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class UserController extends Controller
 {
@@ -16,6 +17,12 @@ class UserController extends Controller
         abort_if(Gate::denies('user_index'), 403);
         $users = User::paginate(5);
         return view('users.index', compact('users'));
+    }
+    public function PDF()
+    {
+        $users= User::all();
+        $pdf = PDF::loadView('PDF.reporte', compact('users'));
+        return $pdf->stream('PDF.reporte');
     }
 
     public function create()
@@ -27,7 +34,7 @@ class UserController extends Controller
 
     public function store(UserCreateRequest $request)
     {
-      
+
         $user = User::create($request->only('name', 'username', 'email')
             + [
                 'password' => bcrypt($request->input('password')),

@@ -14,7 +14,9 @@
             <div class="row">
               <div class="col-12 text-right">
                 @can('role_create')
-                <a href="{{ route('roles.create') }}" class="btn btn-sm btn-facebook">Añadir nuevo rol</a>
+                <a {{-- data-toggle="tooltip" es para agregar mensaje al botón, al pasar el mouse  --}} data-toggle="tooltip" data-placement="top" title="Añadir rol" href="{{ route('roles.create') }}" class="btn btn-sm btn-facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                  </svg></a>
                 @endcan
               </div>
             </div>
@@ -44,15 +46,15 @@
                     </td>
                     <td class="td-actions text-right">
                     @can('role_show')
-                      <a href="{{ route('roles.show', $role->id) }}" class="btn btn-info"> <i
+                      <a {{-- data-toggle="tooltip" es para agregar mensaje al botón, al pasar el mouse  --}} data-toggle="tooltip" data-placement="top" title="Vista" href="{{ route('roles.show', $role->id) }}" class="btn btn-info"> <i
                           class="material-icons">person</i> </a>
                     @endcan
                     @can('role_edit')
-                      <a href="{{ route('roles.edit', $role->id) }}" class="btn btn-success"> <i
+                      <a {{-- data-toggle="tooltip" es para agregar mensaje al botón, al pasar el mouse  --}} data-toggle="tooltip" data-placement="top" title="Editar" href="{{ route('roles.edit', $role->id) }}" class="btn btn-success"> <i
                           class="material-icons">edit</i> </a>
                     @endcan
                     @can('role_destroy')
-                      <form action="{{ route('roles.destroy', $role->id) }}" method="post"
+                      <form {{-- data-toggle="tooltip" es para agregar mensaje al botón, al pasar el mouse  --}} data-toggle="tooltip" data-placement="top" title="Eliminar" action="{{ route('roles.destroy', $role->id) }}" method="post"
                         onsubmit="return confirm('Estas seguro?')" style="display: inline-block;">
                         @csrf
                         @method('DELETE')

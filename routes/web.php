@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PDFController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,4 +34,5 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::resource('permissions', App\Http\Controllers\PermissionController::class);
     Route::resource('roles', App\Http\Controllers\RoleController::class);
+    Route::get('/PDF/reporte','App\Http\Controllers\UserController@PDF')->name('VistaPDF');
 });
