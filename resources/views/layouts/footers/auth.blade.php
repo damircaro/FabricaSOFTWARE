@@ -1,5 +1,5 @@
 <footer class="footer">
-  <div class="container-fluid">
+  <div class="container-fluid d-print-none">
     <nav class="float-left">
       <ul>
         <li>

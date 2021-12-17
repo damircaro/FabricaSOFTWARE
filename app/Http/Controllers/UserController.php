@@ -9,6 +9,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use Spatie\Permission\Models\Role;
 use Barryvdh\DomPDF\Facade as PDF;
+use App\Exports\UsersExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class UserController extends Controller
 {
@@ -23,6 +25,12 @@ class UserController extends Controller
         $users= User::all();
         $pdf = PDF::loadView('PDF.reporte', compact('users'));
         return $pdf->stream('PDF.reporte');
+    }
+
+
+    public function exportExcel()
+    {
+    	return Excel::download(new UsersExport, 'laravelexcel.xlsx');
     }
 
     public function create()

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PDFController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,8 +32,13 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::resource('posts', App\Http\Controllers\PostController::class);
     Route::resource('categorias', App\Http\Controllers\CategoriaController::class);
-
     Route::resource('permissions', App\Http\Controllers\PermissionController::class);
     Route::resource('roles', App\Http\Controllers\RoleController::class);
+
     Route::get('/PDF/reporte','App\Http\Controllers\UserController@PDF')->name('VistaPDF');
+
+    Route::get('/users/export-excel',[UserController::class,'exportExcel'])->name('ExcelUsuario');
+
+
+
 });
