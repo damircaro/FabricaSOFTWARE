@@ -1,8 +1,8 @@
 # Proyecto SENA  Damir Caro
 
-## How to use
 
-Code for [Sena- Fabrica de software](https://www.youtube.com/playlist?list=PLYO5TOinzgThHkDH3GYxAeidegZkuLE3_)
+
+Codigo creado [Sena- Fabrica de software]()
 
 - Clona el repositorio __git clone__
 - Copia __.env.example__ y editalo __.env__
@@ -15,11 +15,11 @@ Code for [Sena- Fabrica de software](https://www.youtube.com/playlist?list=PLYO5
 - Corre __php artisan serve__  __--port=90__)
 - registrate  __register__ y ingresa a la app
 
-## License
+## Licensia
 
 Esto pertenese al SENA.
 
-## More
+## otros
 
 
 - enviame un mensaje si te complicas  [##](##).
