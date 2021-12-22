@@ -13,16 +13,19 @@ class CategoriaController extends Controller
         abort_if(Gate::denies('categoria_index'), 403);
 
         $categorias = Categoria::paginate(5);
-        return view('categorias.index', compact('categoria'));
+        return view('categorias.index', compact('categorias'));
     }
 
     public function create()
     {
-        abort_if(Gate::denies('categoria_index'), 403);
+        abort_if(Gate::denies('categoria_create'), 403);
 
         return view('categorias.create');
 
     }
+
+
+
 
     public function store(Request $request)
     {
@@ -31,12 +34,16 @@ class CategoriaController extends Controller
         return redirect()->route('categorias.index');
     }
 
+
+
     public function show(Categoria $categoria)
     {
         abort_if(Gate::denies('categoria_show'), 403);
 
         return view('categorias.show', compact('categoria'));
     }
+
+
 
     public function edit(Categoria $categoria)
     {
@@ -45,12 +52,16 @@ class CategoriaController extends Controller
         return view('categorias.edit', compact('categoria'));
     }
 
+
+
     public function update(Request $request, Categoria $categoria)
     {
         $categoria->update($request->all());
 
         return redirect()->route('categorias.index');
     }
+
+    
 
     public function destroy(Categoria $categoria)
     {

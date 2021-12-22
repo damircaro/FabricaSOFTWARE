@@ -37,7 +37,7 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::get('/PDF/reporte','App\Http\Controllers\UserController@PDF')->name('VistaPDF');
 
-    Route::get('/users/export-excel',[UserController::class,'exportExcel'])->name('ExcelUsuario');
+    Route::get('/export-excel',[UserController::class,'exportExcel']);
 
 
 

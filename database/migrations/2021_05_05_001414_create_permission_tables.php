@@ -19,7 +19,8 @@ class CreatePermissionTables extends Migration
         if (empty($tableNames)) {
             throw new \Exception('Error: config/permission.php not loaded. Run [php artisan config:clear] and try again.');
         }
-        Schema::create('categories_permissions', function (Blueprint $table) {
+
+        !Schema::create('categories_permissions', function (Blueprint $table) {
             $table->id();
             $table->string('name_category');       // For MySQL 8.0 use string('name', 125);
             // For MySQL 8.0 use string('guard_name', 125);

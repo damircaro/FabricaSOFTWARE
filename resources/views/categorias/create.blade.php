@@ -1,25 +1,25 @@
-@extends('layouts.main', ['activePage' => 'posts', 'titlePage' => 'Nuevo Post'])
+@extends('layouts.main', ['activePage' => 'categorias', 'titlePage' => 'Nueva categoria'])
 
 @section('content')
 <div class="content">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <form method="POST" action="{{ route('posts.store') }}" class="form-horizontal">
+        <form method="POST" action="{{ route('categorias.store') }}" class="form-horizontal">
           @csrf
           <div class="card ">
             <!--Header-->
             <div class="card-header card-header-primary">
-              <h4 class="card-title">Post</h4>
-              <p class="card-category">Ingresar datos del nuevo post</p>
+              <h4 class="card-title">Categorias</h4>
+              <p class="card-category">Ingresar datos de la nueva categoria</p>
             </div>
             <!--End header-->
             <!--Body-->
             <div class="card-body">
               <div class="row">
-                <label for="title" class="col-sm-2 col-form-label">Post title</label>
+                <label for="name_category" class="col-sm-2 col-form-label">Nombre de categoria</label>
                 <div class="col-sm-7">
-                  <input type="text" class="form-control" name="title" placeholder="Ingrese el post title"
+                  <input type="text" class="form-control" name="name_category" placeholder="Ingrese nombre categoria"
                     autocomplete="off" autofocus>
                 </div>
               </div>

@@ -27,7 +27,6 @@
                       <thead class="text-primary">
                         <th>ID</th>
                         <th>Nombre</th>
-                        <th>Categoria</th>
                         <th>Guard</th>
                         <th>Created_at</th>
                         <th class="text-right">Acciones</th>
@@ -37,7 +36,6 @@
                         <tr>
                           <td>{{ $permission->id }}</td>
                           <td>{{ $permission->name }}</td>
-                          <td>{{ $permission->name_category }}</td>
                           <td>{{ $permission->guard_name }}</td>
                           <td>{{ $permission->created_at }}</td>
 

@@ -1,4 +1,4 @@
-<div class="sidebar" data-color="orange" data-background-color="white" data-image="{{ asset('material') }}/img/buho.png">
+<div class="sidebar" data-color="orange" data-background-color="white" data-image="{{ asset('material') }}'img/sena.png'">
   <!--
       Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 

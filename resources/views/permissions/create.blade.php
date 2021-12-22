@@ -22,10 +22,10 @@
                 </div>
               </div>
               <div class="row">
-                <label for="category_permission" class="col-sm-2 col-form-label">Categoria</label>
+                <label for="categories_permissions" class="col-sm-2 col-form-label">Categoria</label>
                 <div class="col-sm-7">
                   <div class="form-group">
-                    <input type="text" class="form-control" name="category_permission" autofocus>
+                    <input type="text" class="form-control" name="categories_permissions" autofocus>
                   </div>
                 </div>
               </div>

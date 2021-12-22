@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="card-description text-center">{{ __('Ingresa tus datos ') }}</p>
+                        <p class="card-description text-center"><font color="black">{{ __('Ingresa tus datos ') }}</font></p>
                         {{-- <div class="bmd-form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
                             <div class="input-group">
                                 <div class="input-group-prepend">

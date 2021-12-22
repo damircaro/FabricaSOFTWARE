@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'posts', 'titlePage' => 'Detalles del post'])
+@extends('layouts.main', ['activePage' => 'categoria', 'titlePage' => 'Detalles de categoria'])
 @section('content')
 <div class="content">
   <div class="container-fluid">
@@ -7,8 +7,8 @@
         <div class="card">
           <!--Header-->
           <div class="card-header card-header-primary">
-            <h4 class="card-title">Posts</h4>
-            <p class="card-category">Vista detallada de {{ $post->title }}</p>
+            <h4 class="card-title">categoria</h4>
+            <p class="card-category">Vista detallada de {{ $categoria->name_category }}</p>
           </div>
           <!--End header-->
           <!--Body-->
@@ -26,12 +26,12 @@
                         <div class="block block-four"></div>
                         <a href="#">
                           <img class="avatar" src="{{ asset('/img/default-avatar.png') }}" alt="">
-                          <h5 class="title mt-3">{{ $post->title }}</h5>
+                          <h5 class="title mt-3">{{ $categoria->name_category }}</h5>
                         </a>
                         <p class="description">
                           {{ _('Ceo/Co-Founder') }} <br>
-                          {{ $post->title }} <br>
-                          {{ $post->created_at }}
+                          {{ $categoria->name_category }} <br>
+                          {{ $categoria->created_at }}
                         </p>
                       </div>
                     </p>

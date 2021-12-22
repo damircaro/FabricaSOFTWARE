@@ -30,8 +30,10 @@ class UserController extends Controller
 
     public function exportExcel()
     {
-    	return Excel::download(new UsersExport, 'laravelexcel.xlsx');
+    	return Excel::download(new UsersExport,'Reporte.xlsx');
     }
+
+
 
     public function create()
     {

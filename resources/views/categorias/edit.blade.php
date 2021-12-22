@@ -1,26 +1,26 @@
-@extends('layouts.main', ['activePage' => 'posts', 'titlePage' => 'Editar Post'])
+@extends('layouts.main', ['activePage' => 'categorias', 'titlePage' => 'Editar Categoria'])
 @section('content')
 <div class="content">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <form method="POST" action="{{ route('posts.update', $post->id) }}" class="form-horizontal">
+        <form method="POST" action="{{ route('categorias.update', $categoria->id) }}" class="form-horizontal">
           @csrf
           @method('PUT')
           <div class="card">
             <!--Header-->
             <div class="card-header card-header-primary">
-              <h4 class="card-title">Editar post</h4>
-              <p class="card-category">Editar datos del post</p>
+              <h4 class="card-title">Editar categoria</h4>
+              <p class="card-category">Editar datos de la categoria</p>
             </div>
             <!--End header-->
             <!--Body-->
             <div class="card-body">
               <div class="row">
-                <label for="title" class="col-sm-2 col-form-label">Title</label>
+                <label for="title" class="col-sm-2 col-form-label">Nombre</label>
                 <div class="col-sm-7">
-                  <input type="text" class="form-control" name="title" placeholder="Ingrese el title"
-                    value="{{ old('title', $post->title) }}" autocomplete="off" autofocus>
+                  <input type="text" class="form-control" name="name_category" placeholder="Ingrese la categoria"
+                    value="{{ old('name_category', $categoria->name_category) }}" autocomplete="off" autofocus>
                 </div>
               </div>
             </div>

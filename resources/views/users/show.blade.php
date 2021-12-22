@@ -17,33 +17,7 @@
             </div>
             @endif
             <div class="row">
-              <div class="col-md-4">
-                <div class="card card-user">
-                  <div class="card-body">
-                    <p class="card-text">
-                      <div class="author">
-                        <a href="#">
-                          <img src="{{ asset('/img/default-avatar.png') }}" alt="image" class="avatar">
-                          <h5 class="title mt-3">{{ $user->name }}</h5>
-                        </a>
-                        <p class="description">
-                        {{ $user->username }} <br>
-                        {{ $user->email }} <br>
-                        {{ $user->created_at }}
-                        </p>
-                      </div>
-                    </p>
-                    <div class="card-description">
-                      
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="button-container">
-                      <button class="btn btn-sm btn-primary">Editar</button>
-                    </div>
-                  </div>
-                </div>
-              </div><!--end card user-->
+
 
               <div class="col-md-4">
                 <div class="card card-user">
@@ -62,7 +36,6 @@
                       </div>
                     </p>
                     <div class="card-description">
-                      
                     </div>
                   </div>
                   <div class="card-footer">
