@@ -45,7 +45,7 @@ class PermissionController extends Controller
         //dd($request->all());
         Permission::create([
             'name'=>$request->name,
-            'category_permission'=>$request->category_permission,
+            'categories_permissions'=>$request->categories_permissions,
         ]);
 
 

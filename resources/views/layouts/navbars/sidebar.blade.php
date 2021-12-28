@@ -1,8 +1,8 @@
 <div class="sidebar" data-color="orange" data-background-color="white" data-image="{{ asset('material') }}'img/sena.png'">
   <!--
-      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+      Consejo 1: puede cambiar el color de la barra lateral usando: data-color ="purple | azure | green | orange | danger"
 
-      Tip 2: you can also add an image using data-image tag
+      Consejo 2: también puede agregar una imagen usando la etiqueta de data-image tag
   -->
   <div class="logo">
     <a href="{{ route('home') }}" class="simple-text logo-normal">
@@ -27,6 +27,7 @@
         </a>
         <div class="collapse show" id="laravelExample">
             <div class="dropdown">
+
                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
@@ -73,8 +74,7 @@
               </div>
         </div>
 
-
-
-    </ul>
+        </ul>
   </div>
+
 </div>

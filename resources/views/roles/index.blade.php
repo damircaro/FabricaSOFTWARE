@@ -55,7 +55,7 @@
                     @endcan
                     @can('role_destroy')
                       <form {{-- data-toggle="tooltip" es para agregar mensaje al botón, al pasar el mouse  --}} data-toggle="tooltip" data-placement="top" title="Eliminar" action="{{ route('roles.destroy', $role->id) }}" method="post"
-                        onsubmit="return confirm('Estas seguro?')" style="display: inline-block;">
+                        onsubmit="return confirm('Seguro de querer eliminarlo?')" style="display: inline-block;">
                         @csrf
                         @method('DELETE')
                         <button type="submit" rel="tooltip" class="btn btn-danger">
