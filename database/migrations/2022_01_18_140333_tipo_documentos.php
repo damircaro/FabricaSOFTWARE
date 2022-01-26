@@ -13,10 +13,10 @@ class TipoDocumentos extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('tipoDocumento');
         Schema::create('tipoDocumento', function (Blueprint $table) {
             $table->id();
-            $table->string('TipoDocumento');
-            $table->integer('NumeroDocumento');
+            $table->string('NombreTip');
             $table->timestamps();
         });
     }

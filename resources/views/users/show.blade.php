@@ -24,15 +24,27 @@
                   <div class="card-body">
                     <p class="card-text">
                       <div class="author">
-                        <a href="#" class="d-flex">
-                          <img src="{{ asset('/img/default-avatar.png') }}" alt="image" class="avatar">
-                          <h5 class="title mx-3">{{ $user->name }}</h5>
-                        </a>
-                        <p class="description">
-                          {{ $user->username }} <br>
-                          {{ $user->email }} <br>
-                          {{ $user->created_at }}
-                        </p>
+
+                          <img src="{{ asset('/img/conductor.jpg') }}" alt="image" class="avatar">
+
+                          <form enctype="multipart/form-data" action="/users" method="POST">
+                            <label style="color:#000000">Actualizar foto de perfil</label>
+                            <input class="btn btn-sm btn-success" type="file" name="avatar">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                            <p class="description" style="color:#000000">
+                                {{-- <img src="/uploads/avatars{{ $user->avatar }}" style="width:150px;height=150px; float:left;border-radius:50%;margin-right:25px;"> --}}
+                              {{ $user->username }} <br>
+                              {{ $user->email }} <br>
+                              {{ $user->created_at }}
+                              
+                            </p>
+
+                            <input type="submit" class="pull-right btn btn-sm btn-primary">
+
+                          </form>
+
+
+
                       </div>
                     </p>
                     <div class="card-description">

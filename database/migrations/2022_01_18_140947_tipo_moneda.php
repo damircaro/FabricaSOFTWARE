@@ -13,6 +13,7 @@ class TipoMoneda extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('TipoMoneda');
         Schema::create('TipoMoneda', function (Blueprint $table) {
             $table->id();
             $table->string('TipoMoneda');

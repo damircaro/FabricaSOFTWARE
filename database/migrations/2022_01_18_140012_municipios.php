@@ -12,7 +12,7 @@ class Municipios extends Migration
      * @return void
      */
     public function up()
-    {
+    {   Schema::dropIfExists('municipio');
         Schema::create('municipio', function (Blueprint $table) {
             $table->id();
             $table->string('NombreMunicipio');

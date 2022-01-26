@@ -13,6 +13,7 @@ class TipoTerceros extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('TipoTercero');
         Schema::create('TipoTercero', function (Blueprint $table) {
             $table->id();
             $table->string('TipoTercero');

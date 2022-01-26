@@ -25,19 +25,15 @@
                         <div class="block block-three"></div>
                         <div class="block block-four"></div>
                         <a href="#">
-                          <img class="avatar" src="{{ asset('/img/default-avatar.png') }}" alt="">
                           <h5 class="title mt-3">{{ $post->title }}</h5>
                         </a>
-                        <p class="description">
-                          {{ _('Ceo/Co-Founder') }} <br>
+                        <p class="description"style="color:#000000">
                           {{ $post->title }} <br>
                           {{ $post->created_at }}
                         </p>
                       </div>
                     </p>
-                    <div class="card-description">
-                      {{ _('Do not be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...') }}
-                    </div>
+                    
                   </div>
                   <div class="card-footer">
                     <div class="button-container">

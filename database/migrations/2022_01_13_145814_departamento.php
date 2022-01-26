@@ -12,7 +12,7 @@ class Departamento extends Migration
      * @return void
      */
     public function up()
-    {
+    {    Schema::dropIfExists('departamento');
         Schema::create('departamento', function (Blueprint $table) {
             $table->id();
             $table->string('NombreDepart');

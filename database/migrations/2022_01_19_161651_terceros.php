@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Pais extends Migration
+class Terceros extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,14 @@ class Pais extends Migration
      * @return void
      */
     public function up()
-    {   Schema::dropIfExists('pais');
-        Schema::create('pais', function (Blueprint $table) {
+    {
+        Schema::dropIfExists('TipoTercero');
+        Schema::create('TipoTercero', function (Blueprint $table) {
             $table->id();
-            $table->string('NombrePais');
+            $table->string('Direccion');
+            $table->integer('Telefono');
+            $table->integer('NIT');
+            $table->string('NombreTercero');
             $table->timestamps();
         });
     }

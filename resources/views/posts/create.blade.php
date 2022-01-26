@@ -17,9 +17,9 @@
             <!--Body-->
             <div class="card-body">
               <div class="row">
-                <label for="title" class="col-sm-2 col-form-label">Post title</label>
+                <label for="title" class="col-sm-2 col-form-label"style="color:#000000">Titulo de post</label>
                 <div class="col-sm-7">
-                  <input type="text" class="form-control" name="title" placeholder="Ingrese el post title"
+                  <input type="text" class="form-control" name="title" placeholder="Ingrese el titulo de post"
                     autocomplete="off" autofocus>
                 </div>
               </div>

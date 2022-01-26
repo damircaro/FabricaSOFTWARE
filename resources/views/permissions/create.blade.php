@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'permissions', 'titlePage' => 'Nuevo permiso'])
+@extends('layouts.main', ['activePage' => 'permissions', 'titlePage' => ''])
 
 @section('content')
 <div class="content">
@@ -9,12 +9,12 @@
           @csrf
           <div class="card">
             <div class="card-header card-header-primary">
-              <h4 class="card-title">Permiso</h4>
+              <h4 class="card-title"> Nuevo Permiso</h4>
               <p class="card-category">Ingresar datos</p>
             </div>
             <div class="card-body">
               <div class="row">
-                <label for="name" class="col-sm-2 col-form-label">Nombre del permiso</label>
+                <label for="name" class="col-sm-2 col-form-label" style="color:#000000">Nombre del permiso</label>
                 <div class="col-sm-7">
                   <div class="form-group">
                     <input type="text" class="form-control" name="name" autofocus>
@@ -22,7 +22,7 @@
                 </div>
               </div>
               <div class="row">
-                <label for="categories_permissions" class="col-sm-2 col-form-label">Categoria</label>
+                <label for="categories_permissions" class="col-sm-2 col-form-label" style="color:#000000">Categoria</label>
                 <div class="col-sm-7">
                   <div class="form-group">
                     <input type="text" class="form-control" name="categories_permissions" autofocus>

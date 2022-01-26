@@ -44,10 +44,9 @@
                             <a {{-- data-toggle="tooltip" es para agregar mensaje al botón, al pasar el mouse  --}} data-toggle="tooltip" data-placement="top" title="Vista" href="{{ route('permissions.show', $permission->id) }}" class="btn btn-info"><i
                                 class="material-icons">person</i></a>
                             @endcan
-                            @can('permission_edit')
-                            <a {{-- data-toggle="tooltip" es para agregar mensaje al botón, al pasar el mouse  --}} data-toggle="tooltip" data-placement="top" title="Editar" href="{{ route('permissions.edit', $permission->id) }}" class="btn btn-warning"><i
-                                class="material-icons">edit</i></a>
-                            @endcan
+
+                         
+
                             @can('permission_destroy')
                             <form {{-- data-toggle="tooltip" es para agregar mensaje al botón, al pasar el mouse  --}} data-toggle="tooltip" data-placement="top" title="Eliminar" action="{{ route('permissions.destroy', $permission->id) }}" method="POST"
                               style="display: inline-block;" onsubmit="return confirm('Seguro de querer eliminarlo?')">

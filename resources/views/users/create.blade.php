@@ -12,9 +12,9 @@
               <p class="card-category">Ingresar datos</p>
             </div>
             <div class="card-body">
-              
+
               <div class="row">
-                <label for="name" class="col-sm-2 col-form-label">Nombre</label>
+                <label for="name" class="col-sm-2 col-form-label" style="color:#000000">Nombre</label>
                 <div class="col-sm-7">
                   <input type="text" class="form-control" name="name" placeholder="Ingrese su nombre" value="{{ old('name') }}" autofocus>
                   @if ($errors->has('name'))
@@ -23,7 +23,7 @@
                 </div>
               </div>
               <div class="row">
-                <label for="username" class="col-sm-2 col-form-label">Nombre de usuario</label>
+                <label for="username" class="col-sm-2 col-form-label"style="color:#000000">Nombre de usuario</label>
                 <div class="col-sm-7">
                   <input type="text" class="form-control" name="username" placeholder="Ingrese su nombre de usuario" value="{{ old('username') }}">
                   @if ($errors->has('username'))
@@ -32,7 +32,7 @@
                 </div>
               </div>
               <div class="row">
-                <label for="email" class="col-sm-2 col-form-label">Correo</label>
+                <label for="email" class="col-sm-2 col-form-label"style="color:#000000">Correo</label>
                 <div class="col-sm-7">
                   <input type="email" class="form-control" name="email" placeholder="Ingrese su correo" value="{{ old('email') }}">
                   @if ($errors->has('email'))
@@ -41,7 +41,7 @@
                 </div>
               </div>
               <div class="row">
-                <label for="password" class="col-sm-2 col-form-label">Contraseña</label>
+                <label for="password" class="col-sm-2 col-form-label"style="color:#000000">Contraseña</label>
                 <div class="col-sm-7">
                   <input type="password" class="form-control" name="password" placeholder="Contraseña">
                   @if ($errors->has('password'))
@@ -50,7 +50,7 @@
                 </div>
               </div>
               <div class="row">
-                <label for="roles" class="col-sm-2 col-form-label">Roles</label>
+                <label for="roles" class="col-sm-2 col-form-label"style="color:#000000">Roles</label>
                 <div class="col-sm-7">
                     <div class="form-group">
                         <div class="tab-content">

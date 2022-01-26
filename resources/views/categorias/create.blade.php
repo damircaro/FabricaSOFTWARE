@@ -17,7 +17,7 @@
             <!--Body-->
             <div class="card-body">
               <div class="row">
-                <label for="name_category" class="col-sm-2 col-form-label">Nombre de categoria</label>
+                <label for="name_category" class="col-sm-2 col-form-label"style="color:#000000">Nombre de categoria</label>
                 <div class="col-sm-7">
                   <input type="text" class="form-control" name="name_category" placeholder="Ingrese nombre categoria"
                     autocomplete="off" autofocus>

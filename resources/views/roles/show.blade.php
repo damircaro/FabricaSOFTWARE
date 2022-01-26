@@ -25,11 +25,9 @@
                         <div class="block block-three"></div>
                         <div class="block block-four"></div>
                         <a href="#">
-                          <img class="avatar" src="{{ asset('/img/default-avatar.png') }}" alt="">
                           <h5 class="title mt-3">Rol: {{ $role->name }}</h5>
                         </a>
-                        <p class="description">
-                          {{ _('Ceo/Co-Founder') }} <br>
+                        <p class="description"style="color:#000000">
                           {{ $role->guard_name }} <br>
                           {{ $role->created_at }}
                         </p>

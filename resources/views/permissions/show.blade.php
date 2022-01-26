@@ -18,10 +18,10 @@
                     <p class="card-text">
                       <div class="author">
                         <a href="#">
-                          <img src="{{ asset('/img/default-avatar.png') }}" alt="image" class="avatar">
+
                           <h5 class="title mt-3">{{ $permission->name }}</h5>
                         </a>
-                        <p class="description">
+                        <p class="description" style="color:#000000">
                         {{ $permission->guard_name }} <br>
                         {{ $permission->created_at }}
                         </p>
