@@ -12,6 +12,7 @@
                 <i class="material-icons">content_copy</i>
               </div>
               <p class="card-category" style="color:#000000">Usuarios Conectados</p>
+
               <h3 class="card-title">1</h3>
             </div>
             <div class="card-footer">

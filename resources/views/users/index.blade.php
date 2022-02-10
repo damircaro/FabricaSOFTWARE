@@ -1,6 +1,6 @@
 
 
-@extends('layouts.main', ['activePage' => 'users', 'titlePage' => 'Usuarios'])
+@extends('layouts.main', ['activePage' => 'users', 'titlePage' => ''])
 @section('content')
     <div class="content">
       <div class="container-fluid">
@@ -10,8 +10,8 @@
               <div class="col-md-12">
                 <div class="card">
                   <div class="card-header card-header-primary d-print-none">
-                    <h4 class="card-title">Usuarios</h4>
-                    <p class="card-category">Usuarios registrados</p>
+
+                    <p class="card-category"><h4>Usuarios registrados</h4></p>
                   </div>
                   <div class="card-body">
                     @if (session('success'))
